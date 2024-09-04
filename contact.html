@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+
+        <!-- Fafa-icon Link -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="/asset/css/common.css" />
+    <link rel="stylesheet" href="/asset/css/style.css" />
+    <link rel="stylesheet" href="/asset/css/responsive.css" />
+
+    <!-- fa fa icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+        <div class="navbar-wrapping">
+          <div class="nav-wrap">
+            <div class="containers">
+              <div
+                class="main-navbar flex align--center justify--center justify--contain"
+                id="myHeader"
+              >
+                <div
+                  class="nav-wrapper flex align--center w-100 justify--center justify--contain"
+                >
+                <div class="nav-logo flex align--center"><a  class="nav-logo flex align--center" href="#">
+                  <img
+                    class="nav-main-logo"
+                    src="/asset/image/nav-logo.svg"
+                    alt="logo-nav"
+                  />
+                  <span class="nav-icon-text">Dietitian Shilpa</span></a>
+                </div>
+                <div class="nav-list-wrapper flex">
+                  <ul class="nav-list flex gap-65">
+                    <li class="nav-list-wrap"><a class="nav-list-wrap" href="/index.html">Home</a></li>
+                    <li class="nav-list-wrap"><a class="nav-list-wrap" href="#">About</a></li>
+                    <li class="nav-list-wrap"><a class="nav-list-wrap" href="#">Health Records</a></li>
+                    <li class="nav-list-wrap"><a class="nav-list-wrap" href="/services.html">services</a></li>
+                    <li class="nav-list-wrap"><a class="nav-list-wrap" href="#">Diet plan</a></li>
+                    <li class="nav-list-wrap"><a class="nav-list-wrap" href="#">Diet Package</a></li>
+                    <li class="nav-list-wrap"><a class="nav-list-wrap" href="/contact.html">Contact US</a></li>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      
+    <section class="contact" id="contact">
+        <div class="containers">
+            <!-- <h1 class="sub-title">Contact <span>US</span></h1> -->
+            <div class="contact-wrapper" id="contact-wrapper">
+                <div class="contact-wrap">
+                    <div class="contact-info">      
+                        <h3 class="contact-header"></i>Contact information</h3>
+                        <h4 class="contact-para">Direct contect us anytime anywhere.</h4>
+                        <div class="contact-email">
+                            <i class='bx bx-envelope fa-2x' style='color:#000000'></i>
+                            <div class="contact-email-info">  
+                                <h5>Email address</h5>   
+                                <p>shilpagosara@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-phone">
+                            <i class='bx bxs-phone fa-2x' style='color:#000000'></i>
+                            <div class="contact-phone-info">
+                                <h5 >Mobile Number</h5>     
+                                <p>+91 951 054 7084</p>
+                            </div> 
+                        </div> 
+                        <div class="home-sci">
+                            <a href="https://www.facebook.com/" target="_blank" ><i class='bx bxl-github' ></i></a>
+                            <a href="https://www.linkedin.com/in/renish-gosara-601896318/" target="_blank" ><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://www.facebook.com/" target="_blank" ><i class='bx bxl-facebook'></i></a>
+                            <a href="https://x.com/RenishGosa24430?t=LAEGmv_OCiBW6mHeWPq6YA&s=08" target="_blank" ><i class='bx bxl-twitter'  ></i></a>
+                        </div>    
+                    </div>
+                    <div class="border-c"></div>
+                    <div class="border-c"></div>
+                    <form onsubmit="sendEmail(); reset(); return false;" class="contact-details">
+                        <div class="contact-detail-info">
+                            <div class="contact-detail-name">
+                                <div class="f-width">
+                                    <div class="border-contact1">
+                                     <div class="f-width"><input class="name-contact" type="text" id="name" name="name" placeholder="Name*" required></div>
+                                     <div>
+                                        <i class='bx bx-user' style='color: #8688A5;'></i> </div></div>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-email">
+                                <div >
+                                    <div class="border-contact2">
+                                     <div class="f-width"><input type="email" id="email" name="email" placeholder="Email address*" required></div>
+                                     <div>
+                                        <i class='bx bx-mail-send' style='color: #8688A5;'></i> </div></div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="contact-detail-number">
+                                <div >
+                                    <div class="border-number">
+                                     <div class="number-cont"><span class="number-cos-span">+91 <span class="cons-number-span">|</span> </span><input type="tel" min="1" max="10" id="phone" name="phone" placeholder="Mobile number*" required>
+                                     <div>
+                                        <i class='bx bx-phone' style='color: #8688A5;' ></i></div></div></div>
+                                </div>
+                        </div>
+                        <div class="contact-message">
+                            <div class="border-message">
+                            <textarea id="message" name="message" rows="5" placeholder="Write message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="contact-btn">
+                            <button type="submit" id="contact-btn-info">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+    </section>
+  </body>
+</html>
