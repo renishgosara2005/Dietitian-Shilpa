@@ -282,12 +282,15 @@ strong:hover{
  border-radius: 20px 0 20px 0;
   transition: background 0.5s, transform 0.5s;        
   box-shadow: 1px 1px 20px #000000, 1px 1px 40px #000000;
+  /* border: 2px solid gray; */
 }
 
-.diet-list div:hover {
+ .diet-list div:hover {
+  
   transform: translateY(-10px);
   border-radius: 0 20px 0 20px;
-}
+  scale: 0.95;
+} 
 
 .diet-header{
   text-align: center;
@@ -911,8 +914,65 @@ border: none;
 color: #fff;
 font-weight: 500;
 }
+/* blog */
 
+.blog-wrap{
+display: flex;
+/* justify-content: space-between;  */
 
+}
+.blog-img img{
+width:120%;
+height: 120%;
+border: 2px solid black;
+}
+.author-link{
+display: flex;
+/* justify-content: space-between; */
+gap: 14px;
+}
+.blog-img-info{
+padding-left: 150px;
+padding-top:20px;
+}
+.blog-img-info h4{
+color: #302f2f;
+font-size: 20px;
+font-weight: 600;
+line-height: 1.2;
+width: 500px;
+margin-bottom: 10px;
+}
+
+.author-info span{
+color: #5b5a5a;
+font-size: 14px;
+font-weight: 600;
+/* line-height: 1.2; */
+width: 500px;
+}
+.date span{
+color: #7f7c7c;
+font-size: 15px;
+font-weight: 500;
+/* line-height: 1.2; */
+width: 500px;
+}
+.discriprtion h5{
+color: #696666;
+font-size: 15px;
+font-weight: 500;
+line-height: 1.2;
+width: 500px;
+margin:10px 0px;
+}
+.read-more-btn button{
+padding: 10px 15px;
+font-size: 15px;
+background-color:rgb(133, 131, 107);
+border: none;
+color: #fff;
+}
 
 .doctor-details{
 margin-top: 60px;
@@ -929,5 +989,4 @@ margin-bottom: 60px;
   display: flex;
   justify-content: center;
 }
-
-     
+   
