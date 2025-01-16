@@ -1,0 +1,8 @@
+@media only screen and (max-width:720px){
+    .nav-list-wrapper1{
+        display: block;
+    }
+    .nav-list-wrapper{
+        display: none;
+    }
+}

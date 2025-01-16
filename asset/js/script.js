@@ -1,13 +1,17 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "0";  
+    document.getElementById("navbar").style.top = "0";
   }
-} 
-
+}
 
 // let currentSlide = 0;
 
@@ -21,36 +25,46 @@ function scrollFunction() {
 //     document.querySelector('.slides').style.transform = `translateX(${-currentSlide * slideWidth}px)`;
 // }
 
-
 let currentSlide = 0;
 let autoSlideInterval;
 
 function changeSlide(direction) {
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
+  const slides = document.querySelectorAll(".slide");
+  const totalSlides = slides.length;
 
-    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-    const slideWidth = slides[0].clientWidth;
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  const slideWidth = slides[0].clientWidth;
 
-    document.querySelector('.slides').style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+  document.querySelector(".slides").style.transform = `translateX(${
+    -currentSlide * slideWidth
+  }px)`;
 }
 
 function startAutoSlide() {
-    autoSlideInterval = setInterval(() => {
-        changeSlide(1);
-    }, 3000); // Change slide every 3 seconds
+  autoSlideInterval = setInterval(() => {
+    changeSlide(1);
+  }, 3000); // Change slide every 3 seconds
 }
 
 function stopAutoSlide() {
-    clearInterval(autoSlideInterval);
+  clearInterval(autoSlideInterval);
 }
 
 // Start auto sliding when the page loads
-document.addEventListener('DOMContentLoaded', (event) => {
-    startAutoSlide();
+document.addEventListener("DOMContentLoaded", (event) => {
+  startAutoSlide();
 
-    // Optionally, stop auto sliding when user interacts with the slider
-    const slider = document.querySelector('.slider');
-    slider.addEventListener('mouseenter', stopAutoSlide);
-    slider.addEventListener('mouseleave', startAutoSlide);
+  // Optionally, stop auto sliding when user interacts with the slider
+  const slider = document.querySelector(".slider");
+  slider.addEventListener("mouseenter", stopAutoSlide);
+  slider.addEventListener("mouseleave", startAutoSlide);
 });
+
+function myFunction() {
+  const menu = document.getElementById("myLinks");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}

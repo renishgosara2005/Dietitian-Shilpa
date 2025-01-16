@@ -65,6 +65,13 @@ body{
   
 }
 
+.nav-list-wrapper1{
+  font-size: 16px;
+  color: #000000;
+  opacity: 72%;
+  display: none;
+}
+
 .nav-logo{
   margin: 0;
   gap: 10px;
@@ -281,15 +288,14 @@ strong:hover{
   border-right: 10px;
  border-radius: 20px 0 20px 0;
   transition: background 0.5s, transform 0.5s;        
-  box-shadow: 1px 1px 20px #000000, 1px 1px 40px #000000;
-  /* border: 2px solid gray; */
+  /* box-shadow: 1px 1px 20px #000000, 1px 1px 40px #000000; */
+  border: 2px solid gray;
 }
 
  .diet-list div:hover {
-  
   transform: translateY(-10px);
   border-radius: 0 20px 0 20px;
-  scale: 0.95;
+  scale: 0.90;
 } 
 
 .diet-header{
@@ -1006,3 +1012,22 @@ margin-bottom: 60px;
   padding: 50px 0;
 }
 
+.view-btn:hover{
+  background-color: #fff;
+border: 2px solid rgb(205, 197, 158);
+color: rgb(205, 197, 158);
+}
+
+.first-btn:hover{
+  background-color: #fff;
+  border: 2px solid rgb(133, 131, 107);
+  color: rgb(133, 131, 107);
+}
+
+.sec-btn:hover{
+  background-color: #fff;
+  border: 2px solid rgb(133, 131, 107);
+  color: rgb(133, 131, 107);
+}
+
+  
